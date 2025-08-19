@@ -1,0 +1,40 @@
+
+### Path settings
+path:
+  expname: spectrum-exp1
+  datadir: data/RFID/s23/
+  logdir: logs/RFID/s23/
+
+
+### rendering settings
+render:
+  scale_worldsize: 1
+  mode: 'spectrum'
+  near: 0
+  far: 5
+  n_samples: 64
+
+
+### training settings
+train:
+  lr: 8e-4
+  weight_decay: 5e-5
+  T_max: 10000
+  eta_min: 1e-6
+  batch_size: 8192
+  total_iterations: 30000
+  load_ckpt: True
+
+  save_freq: 100
+  val_freq: 2500
+  report_freq: 100
+
+
+### network settings
+networks:
+  D: 8
+  W: 256
+  skips: [4]
+  multires: {'pts': 10, 'view': 10, 'tx': 10}
+  input_dims: {'pts': 3, 'view': 3, 'tx': 3}
+  is_embeded: {'pts': True, 'view': True, 'tx': True}

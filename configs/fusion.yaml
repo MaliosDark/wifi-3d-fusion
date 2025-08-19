@@ -1,0 +1,31 @@
+# Scene & fusion
+scene_bounds: [[-2, 2], [-2, 2], [0, 3]]
+rf_res: 64
+pc_top_quantile: 0.97
+alpha: 0.6
+
+# Sources
+source: "esp32"     # esp32 | nexmon
+esp32_udp_port: 5566
+esp32_mtu: 2000
+nexmon_iface: "wlan0"      # monitor-mode interface
+nexmon_pcap: "env/nexmon_live.pcap"
+tcpdump_filter: "type data"
+
+# Realtime detector
+win_seconds: 2.0
+movement_threshold: 0.08
+debounce_seconds: 1.0
+
+# Bridges
+enable_pose3d: false
+pose3d:
+  repo: "third_party/Person-in-WiFi-3D-repo"
+  config: "config/wifi/petr_wifi.py"
+  weights: "env/weights/pwifi3d.pth"
+  python: "python"
+enable_nerf2: false
+nerf2:
+  repo: "third_party/NeRF2"
+  config: "configs/mimo-csi.yml"
+  python: "python"

@@ -1,0 +1,12 @@
+numpy>=1.24
+pyyaml>=6.0.1
+loguru>=0.7.2
+tqdm>=4.66
+open3d>=0.18.0
+opencv-python>=4.9.0.80
+einops>=0.7.0
+watchdog>=4.0.1
+pyzmq>=26.0.3
+csiread>=1.4.1
+matplotlib>=3.8.4
+# OpenMMLab & torch installed by scripts/install_all.sh if you enable pose3d bridge

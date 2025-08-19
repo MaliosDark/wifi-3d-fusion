@@ -1,0 +1,42 @@
+
+### Path settings
+path:
+  expname: mimo-csi-exp1
+  datadir: data/MIMO/
+  logdir: logs/MIMO/
+
+
+### rendering settings
+render:
+  mode: 'csi'
+  near: 0
+  far: 5
+  n_samples: 32
+  scale_worldsize: 1
+
+
+### training settings
+train:
+  lr: 1e-3
+  weight_decay: 5e-5
+  T_max: 10000
+  eta_min: 1e-6
+  batch_size: 64
+  total_iterations: 70000
+  load_ckpt: True
+
+  save_freq: 100
+  val_freq: 2500
+  report_freq: 100
+
+
+### network settings
+networks:
+  D: 8
+  W: 256
+  skips: [4]
+  multires: {'pts': 10, 'view': 10, 'tx': 1}
+  input_dims: {'pts': 3, 'view': 3, 'tx': 52} # real 26, imag 26 for uplink
+  is_embeded: {'pts': True, 'view': True, 'tx': False}
+  attn_output_dims: 52
+  sig_output_dims: 52

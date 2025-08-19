@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  fusion:
+    build: ./docker
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    network_mode: host
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ./:/app
