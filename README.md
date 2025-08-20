@@ -1,4 +1,8 @@
 
+<p align="center">
+  <img src="docs/img/wifi-3d-fusion.png" width="950" alt="WiFi-3D-Fusion — Layered Neural Network Architecture"/>
+</p>
+
 # WiFi-3D-Fusion
 
 <p align="center">
@@ -240,6 +244,10 @@ sudo -E env PATH="$PWD/.venv/bin:$PATH" ./scripts/run_realtime.sh --source monit
 
 ## 🧩 Architecture
 
+<p align="center">
+  <img src="docs/img/wifi3d_architecture.png" width="950" alt="WiFi-3D-Fusion — Layered Neural Network Architecture"/>
+</p>
+
 ### High-level runtime
 
 ```mermaid
@@ -256,6 +264,13 @@ flowchart LR
 
   classDef node fill:#0b7285,stroke:#083344,color:#fff;
 ```
+
+### Model Training
+
+<p align="center">
+  <img src="docs/img/wifi3d_pipeline.png" width="950" alt="WiFi-3D-Fusion — End-to-End Pipeline from CSI to 3D Pose"/>
+</p>
+
 
 ### Processing loop
 
