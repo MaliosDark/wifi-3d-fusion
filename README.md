@@ -98,6 +98,56 @@ This monorepo is production-oriented: robust CSI ingestion from **local Wi-Fi** 
 
 ---
 
+## 🧩 Architecture
+
+<p align="center">
+  <img src="docs/img/wifi3d_architecture.png" width="950" alt="WiFi-3D-Fusion — Layered Neural Network Architecture"/>
+</p>
+
+### High-level runtime
+
+```mermaid
+flowchart LR
+  subgraph Capture
+    A1(ESP32 UDP JSON):::node -->|csi_batch| B[esp32_udp.py]
+    A2(Nexmon + tcpdump):::node -->|pcap| C[nexmon_pcap.py]
+    A3(Monitor Radiotap):::node -->|RSSI stream| D[monitor_radiotap.py]
+  end
+
+  B & C & D --> E[realtime_detector.py]
+  E --> F[fusion rf/rssi]
+  F --> G[Open3D live viewer]
+
+  classDef node fill:#0b7285,stroke:#083344,color:#fff;
+```
+
+### Model Training
+
+<p align="center">
+  <img src="docs/img/wifi3d_pipeline.png" width="950" alt="WiFi-3D-Fusion — End-to-End Pipeline from CSI to 3D Pose"/>
+</p>
+
+
+### Processing loop
+
+```mermaid
+sequenceDiagram
+  participant SRC as CSI/RSSI Source
+  participant DET as MovementDetector
+  participant FUS as Fusion
+  participant VIZ as Open3D Viewer
+
+  loop Frames
+    SRC->>DET: (ts, vector)
+    DET-->>DET: sliding var / threshold
+    DET->>FUS: events + buffers
+    FUS-->>VIZ: point cloud + overlays
+    VIZ-->>User: interactive 3D scene
+  end
+```
+
+---
+
 ## 🚀 Quick Start Guide
 
 ### Method 1: Web-Based Real-Time Visualization (Recommended)
@@ -384,6 +434,10 @@ trainer.train()
 
 ## 🌐 Web Interface Features
 
+<p align="center">
+  <img src="docs/img/web_interface_full_view.png" width="950" alt="WiFi-3D-Fusion — Real-Time Web Interface Dashboard"/>
+</p>
+
 ### Professional Dashboard
 - **Real-time CSI metrics**: Signal variance, amplitude, activity levels
 - **Person detection status**: Count, confidence, positions
@@ -391,27 +445,37 @@ trainer.train()
 - **System performance**: FPS, memory usage, processing time
 - **Activity logging**: Real-time event log with timestamps
 
+#### System Performance Metrics
+<p align="center">
+  <img src="docs/img/web_interface_dashboard.png" width="800" alt="WiFi-3D-Fusion — System Metrics and CSI Status Panels"/>
+</p>
+
 ### Interactive 3D Scene
 - **Manual camera controls**: Orbit, zoom, pan with mouse
 - **Ground noise visualization**: Animated circular wave patterns
 - **Skeleton rendering**: Full 3D human skeletons for detected persons
 - **Real-time updates**: Live data streaming at 10 FPS
 
-### HUD Information Panels
-```
-╔════ 🖥️ SYSTEM METRICS ════╗
-║ FPS: 60 | Frame: 1234      ║
-║ Processing: 15.2ms         ║  
-║ Memory: 245.7 MB           ║
-╚════════════════════════════╝
+<p align="center">
+  <img src="docs/img/web_interface_3d_scene.png" width="800" alt="WiFi-3D-Fusion — 3D Scene with Skeleton Rendering and Ground Noise Patterns"/>
+</p>
 
-╔════ 📡 CSI STATUS ════╗
-║ CSI: Active            ║
-║ Persons: 3 detected    ║
-║ Skeletons: 3 active    ║
-║ Updated: 14:23:45      ║
-╚════════════════════════╝
-```
+### Dashboard Component Panels
+
+### Dashboard Component Panels
+
+<p align="center">
+  <img src="docs/img/system_metrics_panel.png" width="400" alt="WiFi-3D-Fusion — Real-Time System Performance Metrics Panel"/> <img src="docs/img/csi_analytics_panel.png" width="400" alt="WiFi-3D-Fusion — CSI Signal Analysis and Detection Status Panel"/>
+</p>
+<p align="center">
+  <b>System Performance Metrics</b> (left) and <b>CSI Signal Analytics</b> (right)
+</p>
+
+### HUD Information Panels
+
+<p align="center">
+  <img src="docs/img/web_interface_hud_panels.png" width="600" alt="WiFi-3D-Fusion — Real-Time HUD Information Panels"/>
+</p>
 
 
 ### Validate Model Performance
@@ -750,56 +814,6 @@ This will:
 - Launch the Open3D viewer (robust, never blank)
 - Adaptively scan and focus on the most active WiFi channels
 - Show detections and all debug/status info in English
-
----
-
-## 🧩 Architecture
-
-<p align="center">
-  <img src="docs/img/wifi3d_architecture.png" width="950" alt="WiFi-3D-Fusion — Layered Neural Network Architecture"/>
-</p>
-
-### High-level runtime
-
-```mermaid
-flowchart LR
-  subgraph Capture
-    A1(ESP32 UDP JSON):::node -->|csi_batch| B[esp32_udp.py]
-    A2(Nexmon + tcpdump):::node -->|pcap| C[nexmon_pcap.py]
-    A3(Monitor Radiotap):::node -->|RSSI stream| D[monitor_radiotap.py]
-  end
-
-  B & C & D --> E[realtime_detector.py]
-  E --> F[fusion rf/rssi]
-  F --> G[Open3D live viewer]
-
-  classDef node fill:#0b7285,stroke:#083344,color:#fff;
-```
-
-### Model Training
-
-<p align="center">
-  <img src="docs/img/wifi3d_pipeline.png" width="950" alt="WiFi-3D-Fusion — End-to-End Pipeline from CSI to 3D Pose"/>
-</p>
-
-
-### Processing loop
-
-```mermaid
-sequenceDiagram
-  participant SRC as CSI/RSSI Source
-  participant DET as MovementDetector
-  participant FUS as Fusion
-  participant VIZ as Open3D Viewer
-
-  loop Frames
-    SRC->>DET: (ts, vector)
-    DET-->>DET: sliding var / threshold
-    DET->>FUS: events + buffers
-    FUS-->>VIZ: point cloud + overlays
-    VIZ-->>User: interactive 3D scene
-  end
-```
 
 ---
 
