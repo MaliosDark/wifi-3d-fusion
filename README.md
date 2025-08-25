@@ -435,20 +435,15 @@ trainer.train()
 ## 🌐 Web Interface Features
 
 <p align="center">
-  <img src="docs/img/web_interface_full_view.png" width="950" alt="WiFi-3D-Fusion — Real-Time Web Interface Dashboard"/>
+  <img src="docs/img/web_interface_dashboard.png" width="950" alt="WiFi-3D-Fusion — Real-Time Web Interface Dashboard"/>
 </p>
 
-### Professional Dashboard
+### Responsive Dashboard
 - **Real-time CSI metrics**: Signal variance, amplitude, activity levels
 - **Person detection status**: Count, confidence, positions
 - **Skeleton visualization**: 3D animated skeletons with joint tracking
 - **System performance**: FPS, memory usage, processing time
 - **Activity logging**: Real-time event log with timestamps
-
-#### System Performance Metrics
-<p align="center">
-  <img src="docs/img/web_interface_dashboard.png" width="800" alt="WiFi-3D-Fusion — System Metrics and CSI Status Panels"/>
-</p>
 
 ### Interactive 3D Scene
 - **Manual camera controls**: Orbit, zoom, pan with mouse
@@ -459,8 +454,6 @@ trainer.train()
 <p align="center">
   <img src="docs/img/web_interface_3d_scene.png" width="800" alt="WiFi-3D-Fusion — 3D Scene with Skeleton Rendering and Ground Noise Patterns"/>
 </p>
-
-### Dashboard Component Panels
 
 ### Dashboard Component Panels
 
