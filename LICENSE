@@ -1,0 +1,76 @@
+# License - Apache License 2.0
+
+Copyright (c) 2025 MaliosDark
+
+Licensed under the Apache License, Version 2.0 (the "License");  
+you may not use this file except in compliance with the License.  
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software  
+distributed under the License is distributed on an "AS IS" BASIS,  
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  
+See the License for the specific language governing permissions and  
+limitations under the License.
+
+
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║                              🔏 DISCLAIMER                               ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+This project **WiFi-3D-Fusion** is provided **strictly for research,
+educational, and experimental purposes only**.
+
+It is designed to demonstrate the potential of Wi-Fi CSI data for
+visualization and sensing in controlled environments.
+
+────────────────────────────────────────────────────────────────────────────
+
+⚠️  LEGAL NOTICE:
+
+* You must ONLY use this software on networks, devices, and environments
+  where you have explicit permission and authorization.
+* Unauthorized use on networks you do not own or control may violate
+  **local laws, privacy regulations, and wiretap acts**.
+* The author does NOT condone or support any use of this project for
+  surveillance, spying, or privacy invasion.
+
+────────────────────────────────────────────────────────────────────────────
+
+⚠️  LIMITATION OF LIABILITY:
+
+* The author (MaliosDark) is **NOT responsible** for any misuse, illegal
+  activities, or damages caused by this software.
+* By downloading, compiling, or executing this project, you accept full
+  responsibility for ensuring compliance with **all applicable local and
+  international laws**.
+* If you use this project in any unlawful or unethical way, you do so
+  **entirely at your own risk**.
+
+────────────────────────────────────────────────────────────────────────────
+
+✔️  SAFE USE RECOMMENDATIONS:
+
+* Use ONLY on your own Wi-Fi network or testbeds you control.
+* Use dummy/demo mode for demonstrations and education.
+* Always inform participants if the system is used in live environments.
+* Do NOT attempt to use this software for covert monitoring of individuals.
+
+────────────────────────────────────────────────────────────────────────────
+
+📌 By using WiFi-3D-Fusion, you explicitly acknowledge and agree that:
+
+1. You understand this disclaimer in full.
+2. You accept sole responsibility for all outcomes of using this software.
+3. The author is indemnified against all legal claims or damages.
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║         END OF DISCLAIMER – USE RESPONSIBLY OR DO NOT USE AT ALL          ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+
+
+

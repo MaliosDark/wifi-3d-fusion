@@ -11,9 +11,43 @@
 <p align="center">
   <!-- Project -->
   <img src="https://img.shields.io/badge/Project-WiFi--3D--Fusion-blue?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/Powered%20By-MaliosDark-black?style=for-the-badge&logo=starship&logoColor=white" />
+  <p align="center">
+  <img src="https://img.shields.io/badge/DISCLAIMER-Research%20Only⚠️-critical?style=for-the-badge&logo=exclamation&logoColor=white" />
 </p>
 
+<!-- ===== Core GitHub repo badges ===== -->
+<p align="center">
+  <a href="https://github.com/MaliosDark/wifi-3d-fusion/stargazers">
+    <img src="https://img.shields.io/github/stars/MaliosDark/wifi-3d-fusion?style=for-the-badge&logo=github" alt="GitHub Stars"/>
+  </a>
+  <a href="https://github.com/MaliosDark/wifi-3d-fusion/network/members">
+    <img src="https://img.shields.io/github/forks/MaliosDark/wifi-3d-fusion?style=for-the-badge&logo=github" alt="GitHub Forks"/>
+  </a>
+  <a href="https://github.com/MaliosDark/wifi-3d-fusion/watchers">
+    <img src="https://img.shields.io/github/watchers/MaliosDark/wifi-3d-fusion?style=for-the-badge&logo=github" alt="Watchers"/>
+  </a>
+  <a href="https://github.com/MaliosDark/wifi-3d-fusion/issues">
+    <img src="https://img.shields.io/github/issues/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Open Issues"/>
+  </a>
+  <a href="https://github.com/MaliosDark/wifi-3d-fusion/pulls">
+    <img src="https://img.shields.io/github/issues-pr/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Open PRs"/>
+  </a>
+  <img src="https://img.shields.io/github/issues-closed/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Closed Issues"/>
+  <img src="https://img.shields.io/github/issues-pr-closed/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Closed PRs"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/license/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="License"/>
+  <img src="https://img.shields.io/github/last-commit/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/commit-activity/y/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Commit Activity"/>
+  <img src="https://img.shields.io/github/languages/top/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Top Language"/>
+  <img src="https://img.shields.io/github/languages/code-size/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Code Size"/>
+  <img src="https://img.shields.io/github/repo-size/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Repo Size"/>
+  <img src="https://img.shields.io/tokei/lines/github/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Lines of Code"/>
+  <img src="https://img.shields.io/github/v/release/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Latest Release"/>
+  <img src="https://img.shields.io/github/downloads/MaliosDark/wifi-3d-fusion/total?style=for-the-badge" alt="Downloads"/>
+ 
+</p>
 <p align="center">
   <!-- Languages -->
   <img src="https://img.shields.io/badge/Language-Python%20%7C%20C++%20%7C%20JAVASCRIPT-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -87,6 +121,17 @@
   <img src="https://img.shields.io/badge/Multi--Threading-Performance-32CD32?style=for-the-badge&logo=threading&logoColor=white" />
   <img src="https://img.shields.io/badge/Auto--Recovery-Reliability-FF6347?style=for-the-badge&logo=repeat&logoColor=white" />
   <img src="https://img.shields.io/badge/Continuous%20Learning-Adaptive-9370DB?style=for-the-badge&logo=brain&logoColor=white" />
+</p>
+
+<!-- ========= Full-width animated visitor counter (Moe Counter) ========= -->
+<p align="center">
+  <img src="https://count.getloli.com/@MaliosDark.wifi-3d-fusion?theme=moebooru" width="100%" alt="Visitors • animated counter"/>
+</p>
+
+<p align="center">
+  <a href="https://hitscounter.dev">
+    <img src="https://hitscounter.dev/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FMaliosDark%2Fwifi-3d-fusion&count_bg=%2300D67D&title_bg=%23141414&icon=&title=Views&edge_flat=false" alt="Views (daily/total)"/>
+  </a>
 </p>
 
 **Live local Wi-Fi sensing** with CSI: real-time motion detection + visualization, with optional bridges to:
@@ -834,10 +879,92 @@ This will:
 
 ---
 
+<!-- ====================== WHY I BUILT THIS ====================== -->
+<h2>🌌 Why Built WiFi-3D-Fusion</h2>
+<p>
+  I built <strong>WiFi-3D-Fusion</strong> because I couldn’t stand the silence.<br/>
+  The world is full of invisible signals, oceans of information passing through us every second yet most people never even notice. Researchers publish papers, companies whisper promises, but almost nobody shows the truth.
+</p>
+<p>
+  I wanted to tear the veil.
+</p>
+<p>
+  This project is not just software. It’s proof that what we call “air” is alive with data that the invisible can be sculpted into form, movement, presence.<br/>
+  It’s not about spying. It’s not about control.<br/>
+  It’s about showing that technology can reveal without violating, sense without watching, protect without chains.
+</p>
+<p>
+  Why? Because there are places where cameras fail, dark rooms, burning buildings, collapsed tunnels, deep underground. And in those places, a system like this could mean the difference between life and death.
+</p>
+<p>
+  I experiment because I refuse to accept “impossible.”<br/>
+  I build because the world needs to see what it denies exists.<br/>
+  WiFi-3D-Fusion is not a product, it’s a signal flare in the dark.
+</p>
+
+
+
 ## 🔏 Legal / Research Notice
 
-This repository is provided **By Malios Dark for research purposes only**.
-You are responsible for complying with local laws and for using it **only on networks you own or have explicit permission to test**.
+<!-- ====================== ETHICS / PRIVACY ====================== -->
+<h2>Ethics &amp; Privacy</h2>
+<ul>
+  <li>Operate only with explicit authorization on networks and environments you own or control.</li>
+  <li>Prefer non-identifying sensing modes where possible; avoid storing personal data.</li>
+  <li>Inform participants when running live demos in shared spaces.</li>
+  <li>Respect local laws and regulations at all times.</li>
+</ul>
+
+<!-- ====================== DISCLAIMER (ASCII WALL) ====================== -->
+<h2>Disclaimer</h2>
+<pre>
+╔══════════════════════════════════════════════════════════════════════════╗
+║                              🔏 DISCLAIMER                               ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+This project WiFi-3D-Fusion is provided strictly for research,
+educational, and experimental purposes only.
+
+It must ONLY be used on networks, devices, and environments where you
+have explicit permission and authorization.
+
+────────────────────────────────────────────────────────────────────────────
+
+⚠️  LEGAL NOTICE:
+- Unauthorized use may violate local laws, privacy regulations, and wiretap acts.
+- The author does NOT condone or support surveillance, spying, or privacy invasion.
+- You are fully responsible for lawful and ethical operation.
+
+────────────────────────────────────────────────────────────────────────────
+
+⚠️  LIMITATION OF LIABILITY:
+- The author (MaliosDark) is NOT responsible for misuse, illegal activities,
+  or any damages arising from this software.
+- By downloading, compiling, or executing this project, you accept full
+  responsibility for compliance with all applicable laws.
+
+────────────────────────────────────────────────────────────────────────────
+
+✔️  SAFE USE RECOMMENDATIONS:
+- Use ONLY on your own Wi-Fi networks or authorized testbeds.
+- Prefer demo/dummy modes for public showcases.
+- Inform participants when operating in live environments.
+- Do NOT attempt covert monitoring of individuals.
+
+────────────────────────────────────────────────────────────────────────────
+
+📌 By using WiFi-3D-Fusion, you acknowledge:
+1) You understand this disclaimer in full.
+2) You accept sole responsibility for all outcomes of use.
+3) The author is indemnified against legal claims or damages.
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║         END OF DISCLAIMER – USE RESPONSIBLY OR DO NOT USE AT ALL         ║
+╚══════════════════════════════════════════════════════════════════════════╝
+</pre>
+
+---
+
 
 
 
