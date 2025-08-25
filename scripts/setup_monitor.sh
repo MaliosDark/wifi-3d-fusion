@@ -46,4 +46,4 @@ sudo iw dev mon0 set channel 6 HT20 || sudo iw dev mon0 set channel 1 HT20
 # 6) Verifica y prueba tráfico
 iw dev mon0 info
 echo "[*] Testing traffic on mon0 (20 frames)…"
-sudo tcpdump -I -i mon0 -s 0 -vv -c 20
+sudo tcpdump -i mon0 -s 0 -vv -c 20

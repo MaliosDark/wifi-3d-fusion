@@ -25,7 +25,7 @@ set -euo pipefail
 
 # ---- Defaults / Config ----
 REPO="third_party/Person-in-WiFi-3D-repo"
-CFG="${REPO}/config/wifi/petr_wifi.py"
+CFG="${REPO}/configs/wifi/petr_wifi.py"
 WORK_DIR="${REPO}/work_dirs/petr_wifi"
 CKPT_DEFAULT="${WORK_DIR}/latest.pth"
 
