@@ -27,7 +27,6 @@ run_hyper_view.py
 run_antifreeze_radar.py
 run_realtime_gaussian_fast.py
 run_realtime_hop_fixed.py
-run_realtime_hop.py
 run_simplified_radar.py
 test_radar_skeleton.py
 test_person_visualization.py
@@ -36,7 +35,6 @@ test_nodata_text.py
 test_gaussian_viewer.py
 test_diagnostics.py
 test_csi_diag.py
-train_wifi3d.sh
 scripts/run_realtime_dummy.sh
 scripts/run_realtime_gaussian.sh
 scripts/run_realtime_whofi.sh

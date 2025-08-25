@@ -1,4 +1,102 @@
-# WiFi-3D-Fusion: Advanced CSI-Based Person Detection & Visualization
+
+
+
+
+<p align="center">
+  <img src="docs/img/wifi-3d-fusion.png" width="950" alt="WiFi-3D-Fusion — Layered Neural Network Architecture"/>
+</p>
+
+# WiFi-3D-Fusion
+
+<p align="center">
+  <!-- Project -->
+  <img src="https://img.shields.io/badge/Project-WiFi--3D--Fusion-blue?style=for-the-badge&logo=github" />
+  <img src="https://img.shields.io/badge/Powered%20By-MaliosDark-black?style=for-the-badge&logo=starship&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- Languages -->
+  <img src="https://img.shields.io/badge/Language-Python%20%7C%20C++%20%7C%20JAVASCRIPT-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framework-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/Device-ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- Tools & Libs -->
+  <img src="https://img.shields.io/badge/Open3D-Viewer-0A7EEE?style=for-the-badge&logo=opengl&logoColor=white" />
+  <img src="https://img.shields.io/badge/Scapy-Capture-FFD43B?style=for-the-badge&logo=wireshark&logoColor=black" />
+  <img src="https://img.shields.io/badge/tcpdump-Pcap-888888?style=for-the-badge&logo=linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nexmon-CSI-8A2BE2?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenMMLab-mmcv%20%7C%20mmdet-FF6F00?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/NeRF%C2%B2-RF%20Fields-6A0DAD?style=for-the-badge&logo=ai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- Web Technologies -->
+  <img src="https://img.shields.io/badge/Three.js-3D%20Graphics-000000?style=for-the-badge&logo=three.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/WebGL-Rendering-990000?style=for-the-badge&logo=webgl&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-Structure-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- Data Processing -->
+  <img src="https://img.shields.io/badge/NumPy-Arrays-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+  <img src="https://img.shields.io/badge/SciPy-Scientific-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/Matplotlib-Plotting-11557C?style=for-the-badge&logo=python&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- Networking & Protocols -->
+  <img src="https://img.shields.io/badge/UDP-Protocol-4B8BBE?style=for-the-badge&logo=wifi&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTTP-Server-009639?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/WebSocket-Real%20Time-010101?style=for-the-badge&logo=socket.io&logoColor=white" />
+  <img src="https://img.shields.io/badge/JSON-Data-000000?style=for-the-badge&logo=json&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- Machine Learning & AI -->
+  <img src="https://img.shields.io/badge/CUDA-GPU%20Acceleration-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-ML-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+  <img src="https://img.shields.io/badge/CNN-Neural%20Networks-FF4B4B?style=for-the-badge&logo=tensorflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/ReID-Person%20Tracking-9932CC?style=for-the-badge&logo=ai&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- System & Logging -->
+  <img src="https://img.shields.io/badge/Loguru-Logging-FF6B6B?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Watchdog-Monitoring-FFA500?style=for-the-badge&logo=eye&logoColor=white" />
+  <img src="https://img.shields.io/badge/Threading-Concurrency-4169E1?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/YAML-Config-CB171E?style=for-the-badge&logo=yaml&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- WiFi & Hardware -->
+  <img src="https://img.shields.io/badge/Monitor%20Mode-WiFi-1E90FF?style=for-the-badge&logo=wifi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Radiotap-Packet%20Capture-2E8B57?style=for-the-badge&logo=wireshark&logoColor=white" />
+  <img src="https://img.shields.io/badge/Aircrack--ng-Tools-8B0000?style=for-the-badge&logo=kali-linux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tshark-Analysis-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
+</p>
+
+<p align="center">
+  <!-- Performance & Optimization -->
+  <img src="https://img.shields.io/badge/Real--Time-Processing-FF1493?style=for-the-badge&logo=speedtest&logoColor=white" />
+  <img src="https://img.shields.io/badge/Multi--Threading-Performance-32CD32?style=for-the-badge&logo=threading&logoColor=white" />
+  <img src="https://img.shields.io/badge/Auto--Recovery-Reliability-FF6347?style=for-the-badge&logo=repeat&logoColor=white" />
+  <img src="https://img.shields.io/badge/Continuous%20Learning-Adaptive-9370DB?style=for-the-badge&logo=brain&logoColor=white" />
+</p>
+
+**Live local Wi-Fi sensing** with CSI: real-time motion detection + visualization, with optional bridges to:
+- **Person-in-WiFi-3D** (multi-person **3D pose** from Wi-Fi) [CVPR 2024].  
+- **NeRF²** (neural RF radiance fields).  
+- **3D Wi-Fi Scanner** (RSSI volumetric mapping).
+
+This monorepo is production-oriented: robust CSI ingestion from **local Wi-Fi** (ESP32-CSI via UDP, or **Nexmon** via `tcpdump` + `csiread`), a realtime movement detector, and a 3D viewer.
+
+---
 
 ## 🚀 Quick Start Guide
 
@@ -8,7 +106,7 @@
 bash scripts/install_all.sh
 
 # Start web-based real-time visualization
-source .venv/bin/activate
+source venv/bin/activate
 python run_js_visualizer.py
 
 # Open browser to http://localhost:5000
@@ -28,16 +126,19 @@ sudo ./scripts/run_realtime.sh --source nexmon
 ### Train Your Own Detection Model
 ```bash
 # Basic training with current configuration
-python train_model.py --config configs/fusion.yaml
+./train_wifi3d.sh
+
+# Quick training session with continuous learning
+./train_wifi3d.sh --quick --continuous
 
 # Train with specific device source
-python train_model.py --source esp32 --device cuda --epochs 200
+./train_wifi3d.sh --source esp32 --device cuda --epochs 200
 
 # Enable continuous learning (model improves automatically)
-python train_model.py --continuous --auto-improve
+./train_wifi3d.sh --continuous --auto-improve
 
 # Advanced training with custom parameters
-python train_model.py \
+./train_wifi3d.sh \
     --source nexmon \
     --device cuda \
     --epochs 500 \
@@ -80,14 +181,23 @@ python train_model.py \
    - Person re-identification across sessions
 
 ### Real-Time Pipeline Flow
-```
-CSI Data Source → Signal Processing → Neural Detection → 3D Visualization
-     ↓                   ↓                  ↓              ↓
-ESP32/Nexmon     Amplitude/Phase      CNN Classifier   Three.js Web UI
-     ↓                   ↓                  ↓              ↓  
-UDP/PCap        Movement Detection   Person Tracking   Skeleton Rendering
-     ↓                   ↓                  ↓              ↓
-Config YAML     Adaptive Thresholding  ReID System    Activity Logging
+```mermaid
+flowchart TD
+    A[CSI Data Source] --> B[Signal Processing]
+    B --> C[Neural Detection]
+    C --> D[3D Visualization]
+    
+    A1[ESP32/Nexmon] --> B1[Amplitude/Phase]
+    B1 --> C1[CNN Classifier]
+    C1 --> D1[Three.js Web UI]
+    
+    A2[UDP/PCap] --> B2[Movement Detection]
+    B2 --> C2[Person Tracking]
+    C2 --> D2[Skeleton Rendering]
+    
+    A3[Config YAML] --> B3[Adaptive Thresholding]
+    B3 --> C3[ReID System]
+    C3 --> D3[Activity Logging]
 ```
 
 ## 🛠️ Installation & Setup
@@ -109,7 +219,7 @@ cd wifi-3d-fusion
 bash scripts/install_all.sh
 
 # Activate Python environment
-source .venv/bin/activate
+source venv/bin/activate
 
 # Verify installation
 python -c "import torch, numpy, yaml; print('✅ All dependencies installed')"
@@ -164,7 +274,7 @@ python -c "import torch, numpy, yaml; print('✅ All dependencies installed')"
 ### Web-Based Visualization (Recommended)
 ```bash
 # Start the web server with real-time visualization
-source .venv/bin/activate
+source venv/bin/activate
 python run_js_visualizer.py
 
 # Optional: specify device source
@@ -194,13 +304,13 @@ sudo IFACE=mon0 HOP_CHANNELS=1,6,11 python run_realtime_hop.py
 python run_js_visualizer.py
 
 # Train model on collected data
-python train_model.py --epochs 100 --device cuda
+bash train_wifi3d.sh --epochs 100 --device cuda
 
 # Train with continuous learning enabled
-python train_model.py --continuous --auto-improve
+bash train_wifi3d.sh --continuous --auto-improve
 
 # Resume training from checkpoint
-python train_model.py --resume env/weights/checkpoint_epoch_50.pth
+bash train_wifi3d.sh --resume env/weights/checkpoint_epoch_50.pth
 ```
 
 ## 📋 Configuration
@@ -303,19 +413,6 @@ trainer.train()
 ╚════════════════════════╝
 ```
 
-## 🧪 Testing & Validation
-
-### Test Detection System
-```bash
-# Test with dummy data
-python test_person_visualization.py
-
-# Test CSI processing
-python test_csi_diag.py
-
-# Test skeleton generation
-python test_radar_skeleton.py
-```
 
 ### Validate Model Performance
 ```bash
@@ -392,10 +489,10 @@ sudo ip link set wlan0 up
 python -c "import torch; print(torch.cuda.is_available())"
 
 # Reduce batch size for limited memory
-python train_model.py --batch-size 16
+bash train_wifi3d.sh --batch-size 16
 
 # Use CPU training
-python train_model.py --device cpu
+bash train_wifi3d.sh --device cpu
 ```
 
 #### 4. Web Interface Issues
@@ -423,127 +520,6 @@ python run_js_visualizer.py --verbose
 # Check log files
 tail -f env/logs/wifi3d_*.log
 ```
-
-## 🤝 Contributing
-
-### Development Setup
-```bash
-# Fork repository and clone
-git clone https://github.com/your-username/wifi-3d-fusion.git
-cd wifi-3d-fusion
-
-# Create development branch
-git checkout -b feature/your-feature
-
-# Install development dependencies
-pip install -e .[dev]
-
-# Run tests
-python -m pytest tests/
-```
-
-### Code Style
-- Follow PEP 8 for Python code
-- Use type hints where possible
-- Document functions with docstrings
-- Add unit tests for new features
-
-## 📝 License & Citation
-
-This project is licensed under the MIT License. If you use this work in research, please cite:
-
-```bibtex
-@misc{wifi3d-fusion,
-  title={WiFi-3D-Fusion: Advanced CSI-Based Person Detection and Visualization},
-  author={MaliosDark},
-  year={2025},
-  url={https://github.com/MaliosDark/wifi-3d-fusion}
-}
-```
-
-<p align="center">
-  <img src="docs/img/wifi-3d-fusion.png" width="950" alt="WiFi-3D-Fusion — Layered Neural Network Architecture"/>
-</p>
-
-# WiFi-3D-Fusion
-
-<p align="center">
-  <!-- Project -->
-  <img src="https://img.shields.io/badge/Project-WiFi--3D--Fusion-blue?style=for-the-badge&logo=github" />
-  <img src="https://img.shields.io/badge/Powered%20By-MaliosDark-black?style=for-the-badge&logo=starship&logoColor=white" />
-</p>
-
-<p align="center">
-  <!-- Languages -->
-  <img src="https://img.shields.io/badge/Language-Python%20%7C%20C++-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Framework-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/Device-ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
-</p>
-
-<p align="center">
-  <!-- Tools & Libs -->
-  <img src="https://img.shields.io/badge/Open3D-Viewer-0A7EEE?style=for-the-badge&logo=opengl&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scapy-Capture-FFD43B?style=for-the-badge&logo=wireshark&logoColor=black" />
-  <img src="https://img.shields.io/badge/tcpdump-Pcap-888888?style=for-the-badge&logo=linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nexmon-CSI-8A2BE2?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-  <img src="https://img.shields.io/badge/OpenMMLab-mmcv%20%7C%20mmdet-FF6F00?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/NeRF%C2%B2-RF%20Fields-6A0DAD?style=for-the-badge&logo=ai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-</p>
-
-
-**Live local Wi-Fi sensing** with CSI: real-time motion detection + visualization, with optional bridges to:
-- **Person-in-WiFi-3D** (multi-person **3D pose** from Wi-Fi) [CVPR 2024].  
-- **NeRF²** (neural RF radiance fields).  
-- **3D Wi-Fi Scanner** (RSSI volumetric mapping).
-
-This monorepo is production-oriented: robust CSI ingestion from **local Wi-Fi** (ESP32-CSI via UDP, or **Nexmon** via `tcpdump` + `csiread`), a realtime movement detector, and a 3D viewer.
-
----
-
-## Quick start
-
-```bash
-bash scripts/install_all.sh
-# ESP32-CSI UDP (default port 5566):
-./scripts/run_realtime.sh --source esp32
-
-# Or Nexmon (requires monitor-mode iface and nexmon_csi firmware)
-sudo ./scripts/run_realtime.sh --source nexmon
-````
-
-> GPU is only needed if you enable the 3D pose or NeRF² bridges. Realtime detector/visualizer runs on CPU.
-
----
-
-## Hardware paths
-
-### A) ESP32-CSI (recommended to start)
-
-* Flash **ESP32-CSI-Tool** on an ESP32. Configure it to **send CSI via UDP** to your PC’s IP and port **5566** (or change `esp32_udp_port` in `configs/fusion.yaml`).
-* This repo listens and parses JSON CSI payloads (`type: "CSI_DATA"` with `csi` array).
-
-### B) Nexmon (Broadcom chips)
-
-* Install **nexmon\_csi** on a compatible device (e.g., RPi 3B+/4 with bcm43455c0).
-* Put your capture interface in monitor mode (e.g., `wlan0`).
-* We tail a rolling pcap via `tcpdump` and parse CSI with **csiread** in near-real-time.
-
----
-
-## What you get out-of-the-box
-
-* **CSI capture**:
-
-  * `src/csi_sources/esp32_udp.py` — ESP32-CSI UDP JSON receiver.
-  * `src/csi_sources/nexmon_pcap.py` — Nexmon CSI via `tcpdump` + `csiread`.
-* **Realtime analytics**:
-
-  * `src/pipeline/realtime_detector.py` — movement detector using amplitude-variance over a sliding window.
-* **3D visualization**:
-
-  * `src/pipeline/realtime_viewer.py` — Open3D live point cloud (frequency × antenna × amplitude). It displays **real CSI** dynamics; no dummy data.
-
 ---
 
 ## Optional bridges (disabled by default)
@@ -708,6 +684,55 @@ sudo apt install aircrack-ng tcpdump tshark
 
 ## 🧑‍💻 Running the Real-Time Pipeline with Monitor Mode
 
+### Prerequisites
+1. **WiFi adapter in monitor mode** (see setup instructions above)
+2. **Virtual environment activated**
+3. **All dependencies installed**
+
+### Step-by-Step Execution
+
+1. **Activate the virtual environment:**
+```bash
+source venv/bin/activate
+```
+
+2. **Setup monitor interface (if not already done):**
+```bash
+sudo bash scripts/setup_monitor.sh
+```
+
+3. **Verify monitor mode is working:**
+```bash
+sudo iwconfig mon0
+sudo tshark -i mon0 -c 5
+```
+
+4. **Run the real-time pipeline:**
+```bash
+# Basic execution with monitor mode
+sudo -E env PATH="$PWD/venv/bin:$PATH" IFACE=mon0 python run_js_visualizer.py --source monitor
+
+# Advanced: Multi-channel hopping
+sudo -E env PATH="$PWD/venv/bin:$PATH" IFACE=mon0 HOP_CHANNELS=1,6,11 python run_realtime_hop.py
+
+# Web interface with monitor mode
+sudo python run_js_visualizer.py --source monitor
+```
+
+5. **Open the web interface:**
+```bash
+# In your browser, navigate to:
+http://localhost:5000
+```
+
+### What This Does:
+- ✅ **Live CSI/RSSI Capture**: Real-time packet analysis from monitor interface
+- ✅ **Automatic Training**: Continuous learning and model improvement
+- ✅ **3D Visualization**: Web-based Three.js viewer with skeleton rendering
+- ✅ **Channel Scanning**: Adaptive hopping across active WiFi channels
+- ✅ **Person Detection**: Real-time person tracking and identification
+- ✅ **Activity Logging**: Complete debug and status information
+
 
 ---
 
@@ -806,6 +831,7 @@ sequenceDiagram
 
 This repository is provided **By Malios Dark for research purposes only**.
 You are responsible for complying with local laws and for using it **only on networks you own or have explicit permission to test**.
+
 
 
 ## 📚 Citations / Upstreams
