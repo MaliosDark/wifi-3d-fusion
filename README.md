@@ -15,6 +15,12 @@
   <img src="https://img.shields.io/badge/DISCLAIMER-Research%20Only⚠️-critical?style=for-the-badge&logo=exclamation&logoColor=white" />
 </p>
 
+<p align="center">
+  <a href="https://deepwiki.com/MaliosDark/wifi-3d-fusion/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/DeepWiki-Documentation-0A7EEE?style=for-the-badge&logo=readthedocs&logoColor=white" alt="DeepWiki Documentation">
+  </a>
+</p>
+
 <!-- ===== Core GitHub repo badges ===== -->
 <p align="center">
   <a href="https://github.com/MaliosDark/wifi-3d-fusion/stargazers">
