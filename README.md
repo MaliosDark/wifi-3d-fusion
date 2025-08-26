@@ -3,136 +3,88 @@
 
 
 <p align="center">
-  <img src="docs/img/wifi-3d-fusion.png" width="950" alt="WiFi-3D-Fusion — Layered Neural Network Architecture"/>
+  <img src="docs/img/wifi-3d-fusion.png" width="950" alt="WiFi-3D-Fusion — Real-Time 3D Motion Sensing with WiFi"/>
 </p>
 
 # WiFi-3D-Fusion
 
 <p align="center">
-  <!-- Project -->
-  <img src="https://img.shields.io/badge/Project-WiFi--3D--Fusion-blue?style=for-the-badge&logo=github" />
-  <p align="center">
-  <img src="https://img.shields.io/badge/DISCLAIMER-Research%20Only⚠️-critical?style=for-the-badge&logo=exclamation&logoColor=white" />
-</p>
-
-<p align="center">
-  <a href="https://deepwiki.com/MaliosDark/wifi-3d-fusion/" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/DeepWiki-Documentation-0A7EEE?style=for-the-badge&logo=readthedocs&logoColor=white" alt="DeepWiki Documentation">
+  <!-- Core Project Badges -->
+  <img src="https://img.shields.io/badge/Project-WiFi_3D_Fusion-blue?style=flat&logo=github" alt="Project"/>
+  <img src="https://img.shields.io/badge/DISCLAIMER-Research_Only⚠️-critical?style=flat&logo=exclamation&logoColor=white" alt="Disclaimer"/>
+  <a href="https://deepwiki.org/MaliosDark/wifi-3d-fusion/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/CLICK_FOR_EXTENDED_README_>>>>>>_DeepWiki_<<<<<-0A7EEE?style=flat&logo=readthedocs&logoColor=white" alt="DeepWiki Documentation"/>
+  </a>
+  <a href="https://github.com/MaliosDark/wifi-3d-fusion/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-GPL--2.0-informational?style=flat" alt="GPL-2.0 License"/>
   </a>
 </p>
 
-<!-- ===== Core GitHub repo badges ===== -->
 <p align="center">
+  <!-- GitHub Stats -->
   <a href="https://github.com/MaliosDark/wifi-3d-fusion/stargazers">
-    <img src="https://img.shields.io/github/stars/MaliosDark/wifi-3d-fusion?style=for-the-badge&logo=github" alt="GitHub Stars"/>
+    <img src="https://img.shields.io/github/stars/MaliosDark/wifi-3d-fusion?style=flat&logo=github" alt="GitHub Stars"/>
   </a>
   <a href="https://github.com/MaliosDark/wifi-3d-fusion/network/members">
-    <img src="https://img.shields.io/github/forks/MaliosDark/wifi-3d-fusion?style=for-the-badge&logo=github" alt="GitHub Forks"/>
+    <img src="https://img.shields.io/github/forks/MaliosDark/wifi-3d-fusion?style=flat&logo=github" alt="GitHub Forks"/>
   </a>
   <a href="https://github.com/MaliosDark/wifi-3d-fusion/watchers">
-    <img src="https://img.shields.io/github/watchers/MaliosDark/wifi-3d-fusion?style=for-the-badge&logo=github" alt="Watchers"/>
+    <img src="https://img.shields.io/github/watchers/MaliosDark/wifi-3d-fusion?style=flat&logo=github" alt="Watchers"/>
   </a>
   <a href="https://github.com/MaliosDark/wifi-3d-fusion/issues">
-    <img src="https://img.shields.io/github/issues/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Open Issues"/>
+    <img src="https://img.shields.io/github/issues/MaliosDark/wifi-3d-fusion?style=flat" alt="Open Issues"/>
   </a>
-  <a href="https://github.com/MaliosDark/wifi-3d-fusion/pulls">
-    <img src="https://img.shields.io/github/issues-pr/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Open PRs"/>
-  </a>
-  <img src="https://img.shields.io/github/issues-closed/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Closed Issues"/>
-  <img src="https://img.shields.io/github/issues-pr-closed/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Closed PRs"/>
+  <img src="https://img.shields.io/github/last-commit/MaliosDark/wifi-3d-fusion?style=flat" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/commit-activity/y/MaliosDark/wifi-3d-fusion?style=flat" alt="Commit Activity"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="License"/>
-  <img src="https://img.shields.io/github/last-commit/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Last Commit"/>
-  <img src="https://img.shields.io/github/commit-activity/y/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Commit Activity"/>
-  <img src="https://img.shields.io/github/languages/top/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Top Language"/>
-  <img src="https://img.shields.io/github/languages/code-size/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Code Size"/>
-  <img src="https://img.shields.io/github/repo-size/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Repo Size"/>
-  <img src="https://img.shields.io/tokei/lines/github/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Lines of Code"/>
-  <img src="https://img.shields.io/github/v/release/MaliosDark/wifi-3d-fusion?style=for-the-badge" alt="Latest Release"/>
-  <img src="https://img.shields.io/github/downloads/MaliosDark/wifi-3d-fusion/total?style=for-the-badge" alt="Downloads"/>
- 
+  <!-- Languages & Frameworks -->
+  <img src="https://img.shields.io/badge/Language-Python|C++|JavaScript-3776AB?style=flat&logo=python&logoColor=white" alt="Languages"/>
+  <img src="https://img.shields.io/badge/Framework-PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/Device-ESP32-E7352C?style=flat&logo=espressif&logoColor=white" alt="ESP32"/>
 </p>
 <p align="center">
-  <!-- Languages -->
-  <img src="https://img.shields.io/badge/Language-Python%20%7C%20C++%20%7C%20JAVASCRIPT-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Framework-PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/Device-ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" />
+  <img src="https://img.shields.io/badge/Three.js-3D_Graphics-000000?style=flat&logo=three.js&logoColor=white" alt="Three.js"/>
+  <img src="https://img.shields.io/badge/Open3D-Viewer-0A7EEE?style=flat&logo=opengl&logoColor=white" alt="Open3D"/>
 </p>
 
 <p align="center">
-  <!-- Tools & Libs -->
-  <img src="https://img.shields.io/badge/Open3D-Viewer-0A7EEE?style=for-the-badge&logo=opengl&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scapy-Capture-FFD43B?style=for-the-badge&logo=wireshark&logoColor=black" />
-  <img src="https://img.shields.io/badge/tcpdump-Pcap-888888?style=for-the-badge&logo=linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nexmon-CSI-8A2BE2?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-  <img src="https://img.shields.io/badge/OpenMMLab-mmcv%20%7C%20mmdet-FF6F00?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/NeRF%C2%B2-RF%20Fields-6A0DAD?style=for-the-badge&logo=ai&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <!-- Tools & Libraries -->
+  <img src="https://img.shields.io/badge/Scapy-Capture-FFD43B?style=flat&logo=wireshark&logoColor=black" alt="Scapy"/>
+  <img src="https://img.shields.io/badge/tcpdump-Pcap-888888?style=flat&logo=linux&logoColor=white" alt="tcpdump"/>
+  <img src="https://img.shields.io/badge/Nexmon-CSI-8A2BE2?style=flat&logo=gnu-bash&logoColor=white" alt="Nexmon"/>
+  <img src="https://img.shields.io/badge/OpenMMLab-mmcv|mmdet-FF6F00?style=flat&logo=opencv&logoColor=white" alt="OpenMMLab"/>
+  <img src="https://img.shields.io/badge/NeRF²-RF_Fields-6A0DAD?style=flat&logo=ai&logoColor=white" alt="NeRF²"/>
+  <img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white" alt="Docker"/>
 </p>
 
 <p align="center">
-  <!-- Web Technologies -->
-  <img src="https://img.shields.io/badge/Three.js-3D%20Graphics-000000?style=for-the-badge&logo=three.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/WebGL-Rendering-990000?style=for-the-badge&logo=webgl&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-Structure-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <!-- Data & ML -->
+  <img src="https://img.shields.io/badge/NumPy-Arrays-013243?style=flat&logo=numpy&logoColor=white" alt="NumPy"/>
+  <img src="https://img.shields.io/badge/SciPy-Scientific-8CAAE6?style=flat&logo=scipy&logoColor=white" alt="SciPy"/>
+  <img src="https://img.shields.io/badge/OpenCV-Computer_Vision-5C3EE8?style=flat&logo=opencv&logoColor=white" alt="OpenCV"/>
+  <img src="https://img.shields.io/badge/CUDA-GPU_Acceleration-76B900?style=flat&logo=nvidia&logoColor=white" alt="CUDA"/>
+  <img src="https://img.shields.io/badge/CNN-Neural_Networks-FF4B4B?style=flat&logo=tensorflow&logoColor=white" alt="CNN"/>
+  <img src="https://img.shields.io/badge/ReID-Person_Tracking-9932CC?style=flat&logo=ai&logoColor=white" alt="ReID"/>
 </p>
 
 <p align="center">
-  <!-- Data Processing -->
-  <img src="https://img.shields.io/badge/NumPy-Arrays-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/SciPy-Scientific-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" />
-  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-Plotting-11557C?style=for-the-badge&logo=python&logoColor=white" />
+  <!-- System & Networking -->
+  <img src="https://img.shields.io/badge/UDP-Protocol-4B8BBE?style=flat&logo=wifi&logoColor=white" alt="UDP"/>
+  <img src="https://img.shields.io/badge/WebSocket-Real_Time-010101?style=flat&logo=socket.io&logoColor=white" alt="WebSocket"/>
+  <img src="https://img.shields.io/badge/Monitor_Mode-WiFi-1E90FF?style=flat&logo=wifi&logoColor=white" alt="Monitor Mode"/>
+  <img src="https://img.shields.io/badge/Aircrack_ng-Tools-8B0000?style=flat&logo=kali-linux&logoColor=white" alt="Aircrack-ng"/>
+  <img src="https://img.shields.io/badge/YAML-Config-CB171E?style=flat&logo=yaml&logoColor=white" alt="YAML"/>
 </p>
 
 <p align="center">
-  <!-- Networking & Protocols -->
-  <img src="https://img.shields.io/badge/UDP-Protocol-4B8BBE?style=for-the-badge&logo=wifi&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTTP-Server-009639?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/WebSocket-Real%20Time-010101?style=for-the-badge&logo=socket.io&logoColor=white" />
-  <img src="https://img.shields.io/badge/JSON-Data-000000?style=for-the-badge&logo=json&logoColor=white" />
+  <!-- Performance -->
+  <img src="https://img.shields.io/badge/Real_Time-Processing-FF1493?style=flat&logo=speedtest&logoColor=white" alt="Real-Time"/>
+  <img src="https://img.shields.io/badge/Multi_Threading-Performance-32CD32?style=flat&logo=threading&logoColor=white" alt="Multi-Threading"/>
+  <img src="https://img.shields.io/badge/Continuous_Learning-Adaptive-9370DB?style=flat&logo=brain&logoColor=white" alt="Continuous Learning"/>
 </p>
 
-<p align="center">
-  <!-- Machine Learning & AI -->
-  <img src="https://img.shields.io/badge/CUDA-GPU%20Acceleration-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scikit--Learn-ML-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/CNN-Neural%20Networks-FF4B4B?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/ReID-Person%20Tracking-9932CC?style=for-the-badge&logo=ai&logoColor=white" />
-</p>
-
-<p align="center">
-  <!-- System & Logging -->
-  <img src="https://img.shields.io/badge/Loguru-Logging-FF6B6B?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Watchdog-Monitoring-FFA500?style=for-the-badge&logo=eye&logoColor=white" />
-  <img src="https://img.shields.io/badge/Threading-Concurrency-4169E1?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/YAML-Config-CB171E?style=for-the-badge&logo=yaml&logoColor=white" />
-</p>
-
-<p align="center">
-  <!-- WiFi & Hardware -->
-  <img src="https://img.shields.io/badge/Monitor%20Mode-WiFi-1E90FF?style=for-the-badge&logo=wifi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Radiotap-Packet%20Capture-2E8B57?style=for-the-badge&logo=wireshark&logoColor=white" />
-  <img src="https://img.shields.io/badge/Aircrack--ng-Tools-8B0000?style=for-the-badge&logo=kali-linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Tshark-Analysis-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
-</p>
-
-<p align="center">
-  <!-- Performance & Optimization -->
-  <img src="https://img.shields.io/badge/Real--Time-Processing-FF1493?style=for-the-badge&logo=speedtest&logoColor=white" />
-  <img src="https://img.shields.io/badge/Multi--Threading-Performance-32CD32?style=for-the-badge&logo=threading&logoColor=white" />
-  <img src="https://img.shields.io/badge/Auto--Recovery-Reliability-FF6347?style=for-the-badge&logo=repeat&logoColor=white" />
-  <img src="https://img.shields.io/badge/Continuous%20Learning-Adaptive-9370DB?style=for-the-badge&logo=brain&logoColor=white" />
-</p>
-
-<!-- ========= Full-width animated visitor counter (Moe Counter) ========= -->
-<p align="center">
-  <img src="https://count.getloli.com/@MaliosDark.wifi-3d-fusion?theme=moebooru" width="100%" alt="Visitors • animated counter"/>
-</p>
 
 **Live local Wi-Fi sensing** with CSI: real-time motion detection + visualization, with optional bridges to:
 - **Person-in-WiFi-3D** (multi-person **3D pose** from Wi-Fi) [CVPR 2024].  
@@ -141,9 +93,27 @@
 
 This monorepo is production-oriented: robust CSI ingestion from **local Wi-Fi** (ESP32-CSI via UDP, or **Nexmon** via `tcpdump` + `csiread`), a realtime movement detector, and a 3D viewer.
 
+> **Explore More**: The DeepWiki page offers an extended README with additional setup guides, advanced configurations, and community contributions. **[Click Here](https://deepwiki.org/MaliosDark/wifi-3d-fusion/)**
+
 ---
 
+
+## 🎥 Demo
+
+Watch WiFi-3D-Fusion in action:
+
+<p align="center">
+  <img src="docs/img/demo.webp" width="800" alt="WiFi-3D-Fusion Demo Animation"/>
+</p>
+
+
+
+
+
+
 ## 🧩 Architecture
+
+> **Note**: Diagram typos (e.g., “Wayelet CSi tensas”) are being fixed—check `docs/img/` for updates.
 
 <p align="center">
   <img src="docs/img/wifi3d_architecture.png" width="950" alt="WiFi-3D-Fusion — Layered Neural Network Architecture"/>
@@ -194,6 +164,12 @@ sequenceDiagram
 ---
 
 ## 🚀 Quick Start Guide
+
+### Hardware Requirements
+- **Single Device**: Developed using a **dual-band USB WiFi adapter with the Realtek RTL8812AU chipset** (ideal for Nexmon) **OR** an **ESP32 with CSI firmware**.
+- Linux system (Ubuntu 22.04+ recommended).
+- Optional: CUDA-capable GPU for faster training.
+
 
 ### Method 1: Web-Based Real-Time Visualization (Recommended)
 ```bash
@@ -321,6 +297,8 @@ python -c "import torch, numpy, yaml; print('✅ All dependencies installed')"
 ```
 
 ### Hardware Setup
+
+> **Note**: See [WiFi Adapter, Driver, and Monitor Mode Setup](#wifi-adapter-driver-and-monitor-mode-setup-rtl8812au-example) for detailed RTL8812AU configuration.
 
 #### Option A: ESP32-CSI Setup
 1. **Flash ESP32 with CSI firmware**
@@ -719,8 +697,7 @@ docker compose run --rm fusion
 ## 🛠️ WiFi Adapter, Driver, and Monitor Mode Setup (RTL8812AU Example)
 
 ### Supported Adapters
-
-For robust WiFi sensing, we recommend using a USB adapter based on the **Realtek RTL8812AU** chipset. This adapter supports both 2.4 GHz and 5 GHz bands, monitor mode, and packet injection. It is widely used for WiFi security research and is compatible with Linux distributions such as Ubuntu, Kali, and Parrot.
+This project was developed using a **dual-band USB WiFi adapter with the Realtek RTL8812AU chipset**, which supports both 2.4 GHz and 5 GHz bands, monitor mode, and packet injection. This adapter is widely used for WiFi security research and is compatible with Linux distributions such as Ubuntu, Kali, and Parrot. Other Nexmon-compatible adapters or ESP32 with CSI firmware are also supported.
 
 ### Driver Installation (RTL8812AU)
 
@@ -902,6 +879,8 @@ This will:
   WiFi-3D-Fusion is not a product, it’s a signal flare in the dark.
 </p>
 
+> **Limitations**: WiFi sensing faces challenges like signal interference and resolution limits (2.4GHz: ~12.5cm, 5GHz: ~6cm). This is a research project, not for critical applications without validation.
+
 
 
 ## 🔏 Legal / Research Notice
@@ -965,8 +944,21 @@ have explicit permission and authorization.
 
 ---
 
+## Star History
+
+<a href="https://www.star-history.com/#MaliosDark/wifi-3d-fusion&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MaliosDark/wifi-3d-fusion&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MaliosDark/wifi-3d-fusion&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=MaliosDark/wifi-3d-fusion&type=Date" />
+ </picture>
+</a>
 
 
+<!-- ========= Full-width animated visitor counter (Moe Counter) ========= -->
+<p align="center">
+  <img src="https://count.getloli.com/@MaliosDark.wifi-3d-fusion?theme=moebooru" width="100%" alt="Visitors • animated counter"/>
+</p>
 
 ## 📚 Citations / Upstreams
 
