@@ -134,12 +134,6 @@
   <img src="https://count.getloli.com/@MaliosDark.wifi-3d-fusion?theme=moebooru" width="100%" alt="Visitors • animated counter"/>
 </p>
 
-<p align="center">
-  <a href="https://hitscounter.dev">
-    <img src="https://hitscounter.dev/count/tag.svg?url=https%3A%2F%2Fgithub.com%2FMaliosDark%2Fwifi-3d-fusion&count_bg=%2300D67D&title_bg=%23141414&icon=&title=Views&edge_flat=false" alt="Views (daily/total)"/>
-  </a>
-</p>
-
 **Live local Wi-Fi sensing** with CSI: real-time motion detection + visualization, with optional bridges to:
 - **Person-in-WiFi-3D** (multi-person **3D pose** from Wi-Fi) [CVPR 2024].  
 - **NeRF²** (neural RF radiance fields).  
