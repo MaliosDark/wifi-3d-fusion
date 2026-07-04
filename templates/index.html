@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WiFi-3D-Fusion — Live Sensing</title>
+<style>
+  :root {
+    --bg: #0a0e12;
+    --panel: #10161c;
+    --line: #1e2830;
+    --text: #d7e2e9;
+    --dim: #5c7080;
+    --signal: #33c9ee;
+    --warn: #e8b339;
+    --ok: #4fd68a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "SF Mono", "Roboto Mono", Consolas, monospace;
+    font-size: 13px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    grid-template-rows: 48px 1fr;
+  }
+  header {
+    grid-column: 1 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid var(--line);
+    background: var(--panel);
+  }
+  header h1 {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--signal);
+  }
+  header h1 span { color: var(--dim); font-weight: 400; }
+  #status { display: flex; gap: 18px; align-items: center; color: var(--dim); }
+  #status b { color: var(--text); font-weight: 500; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--dim); display: inline-block; margin-right: 6px; }
+  .dot.live { background: var(--ok); box-shadow: 0 0 6px var(--ok); }
+
+  #canvas-wrap { position: relative; }
+  canvas { display: block; width: 100%; height: 100%; }
+
+  aside {
+    border-left: 1px solid var(--line);
+    background: var(--panel);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .block { padding: 14px 16px; border-bottom: 1px solid var(--line); }
+  .block h2 {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--dim);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .metric-row { display: flex; justify-content: space-between; padding: 3px 0; }
+  .metric-row .v { color: var(--signal); }
+  .person {
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .person .id { color: var(--text); }
+  .person .conf { color: var(--ok); }
+  #log { flex: 1; overflow-y: auto; padding: 10px 16px; }
+  .log-line { color: var(--dim); padding: 2px 0; line-height: 1.5; }
+  .log-line .t { color: #3d4a54; margin-right: 6px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>WIFI-3D-FUSION <span>/ live sensing dashboard</span></h1>
+  <div id="status">
+    <div><span class="dot" id="live-dot"></span><b id="live-text">connecting…</b></div>
+    <div>FPS <b id="fps">–</b></div>
+    <div>PERSONS <b id="pcount">–</b></div>
+  </div>
+</header>
+
+<div id="canvas-wrap">
+  <canvas id="scene"></canvas>
+</div>
+
+<aside>
+  <div class="block">
+    <h2>Environment</h2>
+    <div class="metric-row"><span>Signal strength</span><span class="v" id="m-signal">–</span></div>
+    <div class="metric-row"><span>SNR</span><span class="v" id="m-snr">–</span></div>
+    <div class="metric-row"><span>Channel quality</span><span class="v" id="m-quality">–</span></div>
+    <div class="metric-row"><span>Interference</span><span class="v" id="m-interference">–</span></div>
+  </div>
+  <div class="block">
+    <h2>Detected persons</h2>
+    <div id="persons"></div>
+  </div>
+  <div class="block" style="border-bottom:none; flex:1; display:flex; flex-direction:column; min-height:0;">
+    <h2>Activity</h2>
+    <div id="log"></div>
+  </div>
+</aside>
+
+<script>
+const canvas = document.getElementById('scene');
+const ctx = canvas.getContext('2d');
+
+function resize() {
+  canvas.width = canvas.clientWidth * devicePixelRatio;
+  canvas.height = canvas.clientHeight * devicePixelRatio;
+}
+window.addEventListener('resize', resize);
+resize();
+
+// world -> screen: simple top-down projection over x/z, ignoring y (height)
+function project(x, z, bounds) {
+  const w = canvas.width, h = canvas.height;
+  const pad = 60 * devicePixelRatio;
+  const sx = pad + ((x - bounds.minX) / (bounds.maxX - bounds.minX || 1)) * (w - pad * 2);
+  const sy = pad + ((z - bounds.minZ) / (bounds.maxZ - bounds.minZ || 1)) * (h - pad * 2);
+  return [sx, sy];
+}
+
+function drawGrid() {
+  const w = canvas.width, h = canvas.height;
+  ctx.strokeStyle = 'rgba(255,255,255,0.04)';
+  ctx.lineWidth = 1;
+  const step = 40 * devicePixelRatio;
+  for (let x = 0; x < w; x += step) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke(); }
+  for (let y = 0; y < h; y += step) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke(); }
+}
+
+function render(data) {
+  const w = canvas.width, h = canvas.height;
+  ctx.fillStyle = '#0a0e12';
+  ctx.fillRect(0, 0, w, h);
+  drawGrid();
+
+  const persons = data.persons || [];
+  if (persons.length === 0) return;
+
+  // compute bounds across all skeleton points (x,z) for this frame
+  let minX = Infinity, maxX = -Infinity, minZ = Infinity, maxZ = -Infinity;
+  persons.forEach(p => {
+    (p.skeleton || []).forEach(([x, y, z]) => {
+      minX = Math.min(minX, x); maxX = Math.max(maxX, x);
+      minZ = Math.min(minZ, z); maxZ = Math.max(maxZ, z);
+    });
+  });
+  if (!isFinite(minX)) return;
+  const bounds = { minX: minX - 0.5, maxX: maxX + 0.5, minZ: minZ - 0.5, maxZ: maxZ + 0.5 };
+
+  persons.forEach(p => {
+    const pts = (p.skeleton || []).map(([x, y, z]) => project(x, z, bounds));
+    // draw joints
+    ctx.fillStyle = p.confidence > 90 ? '#4fd68a' : '#33c9ee';
+    pts.forEach(([sx, sy]) => {
+      ctx.beginPath();
+      ctx.arc(sx, sy, 2.5 * devicePixelRatio, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    // label near centroid
+    const cx = pts.reduce((a, [x]) => a + x, 0) / pts.length;
+    const cy = pts.reduce((a, [, y]) => a + y, 0) / pts.length;
+    ctx.fillStyle = '#5c7080';
+    ctx.font = `${11 * devicePixelRatio}px monospace`;
+    ctx.fillText(`#${p.id}  ${p.confidence.toFixed(0)}%`, cx + 10 * devicePixelRatio, cy);
+  });
+}
+
+function fmt(n, d = 2) { return typeof n === 'number' ? n.toFixed(d) : '–'; }
+
+const logEl = document.getElementById('log');
+let seenLog = new Set();
+
+function updateSidebar(data) {
+  document.getElementById('fps').textContent = fmt(data.fps, 1);
+  document.getElementById('pcount').textContent = (data.persons || []).length;
+
+  const env = (data.environmental_analysis) || {};
+  document.getElementById('m-signal').textContent = fmt(data.signal_strength, 1) + ' dBm';
+  document.getElementById('m-snr').textContent = fmt(env.snr_db, 1) + ' dB';
+  document.getElementById('m-quality').textContent = env.channel_quality || '–';
+  document.getElementById('m-interference').textContent = fmt(env.interference_level, 2);
+
+  const personsEl = document.getElementById('persons');
+  personsEl.innerHTML = '';
+  (data.persons || []).forEach(p => {
+    const row = document.createElement('div');
+    row.className = 'person';
+    row.innerHTML = `<span class="id">#${p.id}</span><span class="conf">${fmt(p.confidence, 1)}%</span>`;
+    personsEl.appendChild(row);
+  });
+
+  (data.activity || []).slice(-30).forEach(entry => {
+    const key = entry.timestamp + entry.message;
+    if (seenLog.has(key)) return;
+    seenLog.add(key);
+    const line = document.createElement('div');
+    line.className = 'log-line';
+    line.innerHTML = `<span class="t">${entry.timestamp}</span>${entry.message}`;
+    logEl.appendChild(line);
+  });
+  logEl.scrollTop = logEl.scrollHeight;
+  if (logEl.children.length > 200) {
+    logEl.removeChild(logEl.firstChild);
+  }
+}
+
+async function poll() {
+  try {
+    const res = await fetch('/data', { cache: 'no-store' });
+    if (!res.ok) throw new Error('bad status ' + res.status);
+    const data = await res.json();
+    render(data);
+    updateSidebar(data);
+    document.getElementById('live-dot').classList.add('live');
+    document.getElementById('live-text').textContent = 'live';
+  } catch (e) {
+    document.getElementById('live-dot').classList.remove('live');
+    document.getElementById('live-text').textContent = 'disconnected';
+  } finally {
+    setTimeout(poll, 300);
+  }
+}
+
+poll();
+</script>
+
+</body>
+</html>
